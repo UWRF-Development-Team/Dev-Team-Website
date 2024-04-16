@@ -67,3 +67,13 @@ main {
     display: flex;
     flex-direction: column;
 }
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#dev-team-logo-img {
+    width: calc(((25vw + 25vh) / 2) + 10em);
+}
