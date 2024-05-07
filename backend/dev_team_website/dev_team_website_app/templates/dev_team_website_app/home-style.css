@@ -100,11 +100,15 @@ main {
     width: 47%;
     margin: 0 0 0 0;
 }
-.welcome-header {
+#welcome-header {
     justify-content: center;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    padding: calc(((1vw + 1vh) / 2) + 1em);
+    border-radius: calc(((3vw + 3vh) / 2) + 1em);
+    width: 100%;
+    height: 100%;
 }
 #team-with-pretext-div {
     width: 100%;
@@ -121,7 +125,8 @@ main {
     margin: 0;
 }
 #dev-team-logo-img {
-    width: calc(((22vw + 22vh) / 2) + 6em);
+    /*width: calc(((22vw + 22vh) / 2) + 6em);*/
+    width: calc(100% - ((((1vw + 1vh) / 2) + 1em) * 2));
     border-radius: 10%;
 }
 #meet-members-section {
