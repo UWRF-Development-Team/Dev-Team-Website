@@ -1,0 +1,18 @@
+@import "global-variables";
+@import "global-functions";
+@import "global-mixins";
+
+#title-section {
+    margin: $two-percent 0 0 0;
+    @include flex(center, center, column);
+    #title-div {
+        padding: $one-percent $two-percent;
+        background-color: $off-white;
+        border-radius: $two-percent;
+        #title-text {
+            text-align: center;
+            text-decoration: underline;
+            color: $charcoal;
+        }
+    }
+}
