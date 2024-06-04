@@ -1,0 +1,99 @@
+@import "global-variables";
+@import "global-functions";
+@import "global-mixins";
+
+body {
+    font-family: $arial-font;
+    min-height: 100vh;
+    @include flex(space-around, center, column);
+    @include basic-margin-padding(0, 0);
+}
+.no-margin-padding {
+    @include basic-margin-padding(0, 0);
+}
+.link-no-style {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-size: $h1-font-size;
+    @extend .no-margin-padding;
+}
+h2 {
+    font-size: $h2-font-size;
+    @extend .no-margin-padding;
+}
+h3 {
+    font-size: $h3-font-size;
+    @extend .no-margin-padding;
+}
+h4 {
+    font-size: $h4-font-size;
+    @extend .no-margin-padding;
+}
+h5 {
+    font-size: $h5-font-size;
+    @extend .no-margin-padding;
+}
+h6 {
+    font-size: $h6-font-size;
+    @extend .no-margin-padding;
+}
+p {
+    font-size: $p-font-size;
+    @extend .no-margin-padding;
+}
+main {
+    @include flex(center, center, column);
+}
+#nav-bar {
+    @include flex(space-around, center, row);
+    background-color: $off-white;
+    width: 100%;
+    left: 0;
+    top: 0;
+    @extend .no-margin-padding;
+    border-bottom: $very-thin-border $soft-grey solid;
+    height: $five-percent;
+}
+.nav-text {
+    //font-size: calc(((1.5vw + 1.5vh) / 2) + 6px);
+}
+#short-nav-bar {
+    @include flex(space-around, center, row);
+    width: 60%;
+    @extend .no-margin-padding;
+}
+.nav-item {
+    padding: $quarter-percent $half-percent;
+    margin: 0;
+    border-radius: calc(((1vw + 1vh) / 2) + 1em);
+    &:hover {
+        background-color: $grey;
+        cursor: pointer;
+    }
+}
+#footer {
+    @include flex(center, center, column);
+    width: 100%;
+    margin-top: auto;
+    padding: 0;
+    background-color: $grey;
+    height: $five-percent;
+}
+#footer-text-container {
+    width: 90%;
+    height: 90%;
+    @include flex(space-around, center, row);
+}
+.footer-text-div {
+    @include flex(center, center, row);
+    flex: 1;
+    padding: 0 calc(((5vw + 5vh) / 2) + 1em);
+    h5 {
+        font-size: calc($h5-font-size * 0.75);
+    }
+}
+#footer-motto-div {
+    border-left: $very-thin-border #000000 solid;
+}
