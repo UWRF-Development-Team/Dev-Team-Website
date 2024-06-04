@@ -1,0 +1,15 @@
+@import "global-variables";
+@import "global-functions";
+@import "global-mixins";
+
+#meet-members-carousel {
+    width: 50%;
+}
+.member-image-div {
+    @include flex(center, center, column);
+    width: 100%;
+}
+.member-image {
+    width: calc(((35vw + 35vh) / 2) + 7em);
+    border-radius: 10%;
+}
