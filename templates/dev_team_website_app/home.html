@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>UWRF Dev Team</title>
-    <link rel="stylesheet" href="home-style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/global-style.css' %}">
+    <link rel="stylesheet" href="{% static 'style/home-style.css' %}">
+    <link rel="stylesheet" href="{% static 'style/home-carousel-style.css' %}">
+    {#    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">#}
 </head>
 <body>
 <nav id="nav-bar">
     <div id="short-nav-bar">
+        <a href="/" class="link-no-style">
+            <div class="nav-item">
+                <h5 class="nav-text">Home</h5>
+            </div>
+        </a>
         <div class="nav-item">
-            <h5 class="nav-text">Home</h5>
-        </div>
-        <div>
             <h5 class="nav-text">About Us</h5>
         </div>
-        <div>
-            <h5 class="nav-text">Projects</h5>
-        </div>
-        <div>
+        <a href="/projects/" class="link-no-style">
+            <div class="nav-item">
+                <h5 class="nav-text">Projects</h5>
+            </div>
+        </a>
+        <div class="nav-item">
             <h5 class="nav-text">Join!</h5>
         </div>
     </div>
@@ -47,7 +54,7 @@
         </section>
         <section class="half-section">
             <div id="dev-team-logo-img-div">
-                <img id="dev-team-logo-img" src="image/dev_team_logo.png" alt="dev team logo">
+                <img id="dev-team-logo-img" src="{% static 'image/dev_team_logo.png' %}" alt="dev team logo">
             </div>
         </section>
     </section>
@@ -61,17 +68,17 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="member-image-div">
-                    <img src="image/member_oliver.jpg" alt="Oliver" class="member-image d-block">
+                    <img src="{% static 'image/member_oliver.jpg' %}" alt="Oliver" class="member-image d-block">
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="member-image-div">
-                    <img src="image/member_randy.jpg" alt="Randy" class="member-image d-block">
+                    <img src="{% static 'image/member_randy.jpg' %}" alt="Randy" class="member-image d-block">
                 </div>
             </div >
             <div class="carousel-item">
                 <div class="member-image-div">
-                    <img src="image/member_colton.jpg" alt="Colton" class="member-image d-block">
+                    <img src="{% static 'image/member_colton.jpg' %}" alt="Colton" class="member-image d-block">
                 </div>
             </div>
         </div>
@@ -86,14 +93,14 @@
 <footer id="footer">
     <div id="footer-text-container">
         <div class="footer-text-div">
-            <h6>
+            <h5>
                 2024 UWRF Development Team
-            </h6>
+            </h5>
         </div>
         <div class="footer-text-div" id="footer-motto-div">
-            <h6>
+            <h5>
                 Do more, Do it together, Dev Team
-            </h6>
+            </h5>
         </div>
     </div>
 </footer>
@@ -101,6 +108,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
 <!-- Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-<script src="home-script.js" type="module"></script>
+<script src="{% static 'script/home-script.js' %}" type="module"></script>
 </body>
 </html>
