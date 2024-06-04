@@ -1,0 +1,49 @@
+@import "global-variables";
+@import "global-functions";
+@import "global-mixins";
+main {
+    @include flex(space-around, center, column);
+    margin: calc(((3vw + 3vh) / 2) + 1em);
+}
+.landing-container {
+    @include flex(space-around, center, row);
+}
+#intro-section {
+    @include flex(space-between, start, row);
+    /*margin: calc(((4vw + 4vh) / 2) + 1.5em);*/
+}
+.half-section {
+    @include flex(center, center, column);
+    width: 47%;
+    margin: 0;
+}
+#welcome-header {
+    @include flex(center, flex-start, column);
+    padding: calc(((1vw + 1vh) / 2) + 1em);
+    border-radius: calc(((3vw + 3vh) / 2) + 1em);
+    @include size(100%, 100%);
+}
+#team-with-pretext-div {
+    width: 100%;
+    margin: 0 0 calc(((1vw + 1vh) / 2) + 1em) 0
+}
+#dev-team-title-pretext-div, #dev-team-title-pretext {
+    margin: 0;
+}
+#dev-team-title-pretext-div {
+    width: 100%;
+    text-align: left;
+}
+#team-title-div, #team-title-text {
+    margin: 0;
+}
+#dev-team-logo-img {
+    /*width: calc(((22vw + 22vh) / 2) + 6em);*/
+    width: calc(100% - ((((1vw + 1vh) / 2) + 1em) * 2));
+    border-radius: 10%;
+}
+#meet-members-section {
+    @include flex(center, center, column);
+    width: 100%;
+    @import "bootstrap/scss/bootstrap";
+}
