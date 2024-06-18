@@ -79,21 +79,21 @@ main {
     margin-top: auto;
     padding: 0;
     background-color: $grey;
-    height: $five-percent;
-}
-#footer-text-container {
-    width: 90%;
-    height: 90%;
-    @include flex(space-around, center, row);
-}
-.footer-text-div {
-    @include flex(center, center, row);
-    flex: 1;
-    padding: 0 calc(((5vw + 5vh) / 2) + 1em);
-    h5 {
-        font-size: calc($h5-font-size * 0.75);
+    height: $three-percent;
+    #footer-text-container {
+        @include flex(space-around, center, row);
+        margin: $half-percent $zero;
+        .footer-text-div {
+            @include flex(center, center, row);
+            //flex: 1;
+            padding: 0 calc(((5vw + 5vh) / 2) + 1em);
+            h5 {
+                font-size: calc($h5-font-size * 0.75);
+            }
+        }
     }
-}
-#footer-motto-div {
-    border-left: $very-thin-border #000000 solid;
+
+    #footer-motto-div {
+        border-left: $very-thin-border #000000 solid;
+    }
 }
