@@ -16,3 +16,45 @@
         }
     }
 }
+#projects-section {
+    @include flex(center, center, column);
+    .project-div {
+        @include flex(space-between, center, row);
+        border-radius: $one-percent;
+        background-color: $soft-grey;
+        padding: $one-percent;
+        border: $very-thin-border solid $charcoal;
+        box-shadow: $black $quarter-percent $quarter-percent 0 0;
+        margin: $one-percent $zero;
+        .project-title-with-description {
+            @include flex(flex-start, flex-start, column);
+            width: 65%;
+            .title-with-link-icon {
+                @include flex(center, center, row);
+                .project-title-div {
+                    margin: 0 $half-percent $half-percent 0;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .link-icon-div {
+                    @include flex(center, center, row);
+                    @include size($two-percent, $two-percent);
+                    img {
+                        @include size(100%, 100%);
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .project-image-div {
+            @include size($ten-percent, $ten-percent);
+            @include flex(center, center, row);
+            img {
+                @include size(100%, 100%);
+            }
+        }
+    }
+}
