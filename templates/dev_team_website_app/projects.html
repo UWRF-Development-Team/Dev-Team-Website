@@ -29,11 +29,63 @@
     </div>
 </nav>
 <main>
-<section id="title-section">
-    <div id="title-div">
-        <h1 id="title-text">Projects</h1>
-    </div>
-</section>
+    <section id="title-section">
+        <div id="title-div">
+            <h1 id="title-text">Our Projects</h1>
+        </div>
+    </section>
+    <section id="projects-section">
+        <div class="project-div">
+            <div class="project-title-with-description">
+                <a class="link-no-style" target="_blank" href="https://github.com/UWRF-Development-Team/Currency-Converter">
+                    <div class="title-with-link-icon">
+                        <div class="project-title-div">
+                            <h3>Currency Converter</h3>
+                        </div>
+                        <div class="link-icon-div">
+                            <img src="{% static 'image/icon/external_link_icon.svg' %}" alt="External Link">
+                        </div>
+                    </div>
+                </a>
+                <div class="project-description-div">
+                    <p>
+                        The currency converter is an application for
+                        converting values of different currencies. We have
+                        written the program in Java and get our data from the
+                        Open Exchange Rates API.
+                    </p>
+                </div>
+            </div>
+            <div class="project-image-div">
+                <img src="{% static 'image/project_image/currency_converter.png' %}" alt="Currency Converter">
+            </div>
+        </div>
+        <div class="project-div">
+            <div class="project-title-with-description">
+                <a class="link-no-style" target="_blank" href="https://github.com/UWRF-Development-Team/Games-Website">
+                    <div class="title-with-link-icon">
+                        <div class="project-title-div">
+                            <h3>Games Website</h3>
+                        </div>
+                        <div class="link-icon-div">
+                            <img src="{% static 'image/icon/external_link_icon.svg' %}" alt="External Link">
+                        </div>
+                    </div>
+                </a>
+                <div class="project-description-div">
+                    <p>
+                        The games website is a place where you can play games
+                        online. We have written the website in HTML, CSS, and
+                        JavaScript for the front-end and Java Spring Boot in
+                        the back-end.
+                    </p>
+                </div>
+            </div>
+            <div class="project-image-div">
+                <img src="{% static 'image/project_image/games_website.png' %}" alt="Games Website">
+            </div>
+        </div>
+    </section>
 </main>
 <footer id="footer">
     <div id="footer-text-container">
@@ -49,5 +101,6 @@
         </div>
     </div>
 </footer>
+<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
